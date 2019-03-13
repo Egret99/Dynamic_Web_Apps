@@ -10,4 +10,4 @@ After that,for Windows users, run `node app`  in the terminal. For Mac users, pl
 
 Note: See [Twit Documentation](https://www.npmjs.com/package/twit) to see structure and more info.
 ## Know Bugs/Future Fixes
--When running command line `explorer https://twitter.com/` on windows, it sometimes will catch error, but that doesn't affect the bot from running.
+- When running command line `explorer https://twitter.com/` on windows, it sometimes will catch error, but that doesn't affect the bot from running.
