@@ -1,4 +1,4 @@
-#Trending Topic Image Twitter Bot
+# Trending Topic Image Twitter Bot
 ## About
 This Trending Topic Image Twitter Bot will automatically grab the hottest topic on twitter and put the text into a processing program that generates a painting that is the visualization of the text.
 
