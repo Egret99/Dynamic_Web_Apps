@@ -1,5 +1,5 @@
-#Pokemon Index
-##About
+# Pokemon Index
+## About
 This is a pokemon search app that will return all the moves of the pokemon you search.
 
 ##How to Use
