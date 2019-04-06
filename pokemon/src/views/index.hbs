@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pokemondex</title>
+        <link rel="stylesheet" href="/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="main-content">
+            <h1>Pokemon Moves Index</h1>
+            <form action='/' method='POST'>
+                <input name="pokemon" type="text" placeholder="Enter name">
+                <button type="submit">Search</button>
+            </form>
+            <h2>{{pokemonName}}{{moveName}}</h2>
+            <ul id='moves'>
+                {{#each moves}}
+                    <li><a href='/move/{{this.move.name}}'>{{this.move.name}}</a></li>
+                {{/each}}
+            </ul>
+            <p style="margin: 0 20px; font-size: 20px; color: #CBE896;">{{err}}{{effect}}</p>
+        </div>
+    </body>
+</html>
