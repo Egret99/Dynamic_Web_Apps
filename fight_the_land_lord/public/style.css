@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+#app {
+    flex-basis: 0;
+    flex-grow: 0.85;
+    background-color: #F3F8F2;
+    color: #3581B8
+}
+
+#app h1, h2 {
+    color: #FCB07E;
+    margin: 10px 20px;
+}
+
+#app h1 {
+    font-size: 40px;
+}
+
+#app h2 {
+    font-size: 28px;
+}
+
+#app p {
+    margin: 0 20px 5px;
+}
+
+#app #admin {
+    color: rgb(35, 81, 114);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#playground #message {
+    height: 50px;
+    width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+
+#playground #card-display {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#playground #skip {
+    display: block;
+    font-size: 60px;
+}
+
+#player-info {
+    margin: 20px 0;
+}
+
+#player-info #play-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#play-cards #buttons {
+    display: flex;
+    justify-content: center;
+}
+
+#buttons button {
+    font-size: 30px;
+    margin: 5px 20px;
+    padding: 20px;
+    background-color: #3581B8;
+    color: #F3F8F2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+div#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+div.card {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #aaa;
+    width: 60px;
+    height: 90px;
+    font-size: 30px;
+    color: #888888;
+    cursor: pointer;
+}
+
+div.toPlay {
+    border: 3px solid red;
+}
+
+
+/* Player sidebar */
+
+#player-list {
+    flex-basis: 0;
+    flex-grow: 0.15;
+    background-color: #3581B8;
+    color: #F3F8F2;
+    padding: 0 20px;
+}
+
+#player-list h1 {
+    margin: 10px 0;
+}
+
+#player-list ul {
+    list-style: none;
+    margin: 0 5px;
+    padding: 0;
+}
+
+#player-list li {
+    color: #EBE9E9;
+    font-size: 24px;
+}
+
+#player-list li.player {
+    color: #FCB07E;
+}
+
+#player-list li.landlord::after {
+    content: "landlord";
+    margin-left: 5px;
+    border: 1px solid #F3F8F2;
+    padding: 2px 5px;
+    border-radius: 5px;
+}

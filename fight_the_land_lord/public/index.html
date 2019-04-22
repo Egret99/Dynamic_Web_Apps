@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fight The Landlord</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            <div id="playground">
+                <h1>Playground</h1>
+                <p id="admin">Admin</p>
+                <div id="message"></div>
+                <div id="card-display"></div>
+            </div>
+            <div id="player-info">
+                <h1>Your Card</h1>
+                <h2 id="name"></h2>
+                <p id="landlord"></p>
+                <p id="turnInfo"></p>
+                <div id="play-cards">
+                    <div id="cards"></div>
+                    <div id="buttons"></div>
+                </div>
+            </div>
+        </div>
+        <div id="player-list">
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="script.js" type="module"></script>
+    </body>
+</html>
