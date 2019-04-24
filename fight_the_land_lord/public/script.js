@@ -205,7 +205,7 @@ socket.on("next turn", ({cardsPlayed, cardType, nextPlayerIndex, skipped}) => {
                 } else {
                     cardsToPlay.push({
                         id,
-                        value: e.target.classList[1]
+                        value: parseInt(e.target.classList[1])
                     });
                     e.target.classList.add("toPlay");
                 }
@@ -214,6 +214,7 @@ socket.on("next turn", ({cardsPlayed, cardType, nextPlayerIndex, skipped}) => {
 
         $confirm.addEventListener('click', () => {
             //validate
+            cardsToPlay.sort((a, b) => a.value - b.value);
             const thisCardType = validatePoker(cardsToPlay);
             if (thisCardType) {
                 if (skipped.length === 0) {

@@ -8,8 +8,11 @@ const validatePoker = (cards) => {
             break;
         case 2:
             if(cards[0].value !== cards[1].value) {
-                alert("A double-cards must be the same!");
-                break;
+                if (cards.includes(14) && cards.includes(15)) {
+                    cardType = "rocket";
+                } else {
+                    alert("A double-cards must be the same!");
+                }
             } else {
                 cardType = "double";
             }
@@ -18,7 +21,6 @@ const validatePoker = (cards) => {
         case 3:
             if(cards[0].value !== cards[1].value || cards[0].value !== cards[2].value) {
                 alert("A tripple-cards must all be the same!");
-                break;
             } else {
                 cardType = "tripple"
             }
@@ -26,7 +28,9 @@ const validatePoker = (cards) => {
             break;
         
         case 4: 
-            cardType = "other";
+            if (cards[0].value === cards[1].value === cards[2].value === cards[3].value) {
+                cardType = "bomb"
+            }
             break;
         
         // default:
